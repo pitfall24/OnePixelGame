@@ -1,0 +1,7 @@
+B B B B B
+B G W W B
+B G G G B
+B G F G B
+B G G G B
+B B B B B
+(2,3) (1,1)
