@@ -17,10 +17,10 @@ bearCounter = 0
 playerCounter = 0
 frameCounter = 0
 
-bearCooldown = FRAMERATE
+bearCooldown = FRAMERATE * 2
 playerCooldown = FRAMERATE / 10
 
-switch = (-1000000, -1000000)
+switch = world.bearLocation
 
 running = True
 while running:
@@ -54,9 +54,10 @@ while running:
                 world.score *= 2
 
             if event.key == pg.K_c:
-                temp = world.bearLocation
+                switch = world.bearLocation
+                world.bearLocation = (-1000000, -1000000)
+            elif event.key == pg.K_v:
                 world.bearLocation = switch
-                switch = temp
 
             if playerCounter == 0:
                 playerCounter = playerCooldown

@@ -2,7 +2,8 @@
 
 Controls:
 - Arrow keys for movement
-- c to toggle cheat (removes bear)
+- c to cheat (removes bear)
+- v to bring bear back
 - q or close window to exit
 - i to increment score by 1
 - o to increment score by 10
